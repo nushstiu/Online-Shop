@@ -1,0 +1,127 @@
+*, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+:root{
+    --border-menu-item: #B4B4B3;
+    --category-color: #838383;
+    --buy-btn--hover-color: #00a36c;
+    --brown-text: #827070;
+}
+
+.container{
+    width: 1400px;
+    margin: auto;
+}
+
+header{
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-navigation{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+}
+.nav-navigation li a {
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
+    text-decoration: none;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-menu .menu-item{
+    border: 1px solid var(--border-menu-item);
+    border-top: none;
+    width: 90px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    padding: 33px 60px;
+}
+.fav-container .product-fav{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 40px;
+}
+
+.fav-container .product-fav h3{
+    font-size: 18px;
+
+}
+.fav-container .product-fav span{
+    font-size: 16px;
+}
+.fav-container{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+h1{
+    position: relative;
+    left: 100px;
+    font-weight: 400;
+    padding-top: 20px;
+    font-size: 25px;
+}
+.product-fav {
+    position: relative;
+    width: 300px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.product-fav h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+.product-fav p {
+    color: var(--category-color);
+    font-weight: 400;
+}
+.product-fav .price-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.product-fav .price-block span {
+    font-size: 20px;
+    font-weight: bold;
+}
+.product-fav .price-block button {
+    padding: 5px;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+.product-fav .price-block button:hover {
+    background-color: var(--buy-btn--hover-color);
+    font-weight: bold;
+}

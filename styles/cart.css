@@ -1,0 +1,133 @@
+*, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+:root{
+    --border-menu-item: #B4B4B3;
+    --category-color: #838383;
+    --buy-btn--hover-color: #00a36c;
+    --brown-text: #827070;
+}
+
+.container{
+    width: 1400px;
+    margin: auto;
+}
+
+header{
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-navigation{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+}
+.nav-navigation li a {
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
+    text-decoration: none;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-menu .menu-item{
+    border: 1px solid var(--border-menu-item);
+    border-top: none;
+    width: 90px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    padding: 33px 60px;
+}
+.cart-container .product-card{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 40px;
+}
+
+.cart-container .product-card h3{
+    font-size: 18px;
+
+}
+.cart-container .product-card span{
+    font-size: 16px;
+}
+.cart-container{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.product-card .price-block button:hover {
+    background-color: var(--buy-btn--hover-color);
+    font-weight: bold;
+}
+.qty-block{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.qty-block i{
+    cursor: pointer;
+    transition: all 0.2 ease-in;
+}
+.qty-block:hover .fa-plus::before {
+color: green;
+}
+
+.qty-block:hover .fa-minus::before {
+color: red;
+}
+h1{
+    position: relative;
+    left: 100px;
+    font-weight: 400;
+    padding-top: 20px;
+    font-size: 25px;
+}
+.product-card {
+    position: relative;
+    width: 300px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.product-card h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+.product-card p {
+    color: var(--category-color);
+    font-weight: 400;
+}
+.product-card .price-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.product-card .price-block span {
+    font-size: 20px;
+    font-weight: bold;
+}
